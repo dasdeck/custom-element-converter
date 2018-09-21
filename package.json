@@ -1,0 +1,19 @@
+{
+  "name": "custom-element-migrator",
+  "version": "1.0.0",
+  "description": "migrate yootheme-pro custom elements",
+  "main": "src/index.js",
+  "cli": "src/cli.js",
+  "repository": "https://github.com/yootheme/custom-element-migrator",
+  "author": "yootheme",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
