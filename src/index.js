@@ -33,6 +33,8 @@ const mixinMap = {
 const panelOrder = [
     'name',
     'title',
+    'icon',
+    'iconSmall',
     'element',
     'container',
     'mixins',
@@ -309,7 +311,7 @@ function evaluateComponent(component, name = null) {
 
     const element = {
         name,
-        ...pick(component, ['title', 'name']),
+        ...pick(component, ['title', 'name', 'icon', 'iconSmall']),
         ...collectMixins(component),
         defaults: data && data.props
 

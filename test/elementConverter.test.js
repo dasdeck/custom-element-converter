@@ -17,6 +17,15 @@ describe('elementConverter', () => {
 
     });
 
+    it('get icons', () => {
+
+        const types = convertElement(fs.readFileSync(__dirname + '/exampleElement.js'));
+
+        expect(types.example_element.icon).toEqual('{+$theme}_child/builder/example-element/icon.svg');
+        expect(types.example_element.iconSmall).toEqual('{+$theme}_child/builder/example-element/icon-small.svg');
+
+    });
+
     it('parse legacy config file', () => {
 
         const types = convertElement(`
