@@ -7,7 +7,7 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
+            "name": "migrate old example",
             "program": "${workspaceFolder}/src/cli.js",
             "cwd": "${workspaceFolder}/test",
             "args": [
